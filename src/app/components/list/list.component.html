@@ -1,0 +1,8 @@
+<app-add-item (addItem)="addItem($event)"></app-add-item>
+<app-item 
+    *ngFor="let item of items; let i = index" 
+    [item]="item" 
+    [i]="i" 
+    (deleteItem)="deleteItem($event)"
+>
+</app-item>
